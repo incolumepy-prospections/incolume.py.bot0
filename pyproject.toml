@@ -12,6 +12,8 @@ python = "^3.10"
 schedule = "^1.2.0"
 pyautogui = "^0.9.54"
 
+[tool.poetry.scripts]
+bot-revervapr = 'incolume.py.prospect.bot.bot_revervapr:run'
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.11.0"
