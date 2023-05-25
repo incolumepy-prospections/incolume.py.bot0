@@ -2,14 +2,15 @@
 
 __author__ = "@britodfbr"  # pragma: no cover
 
-import schedule
-import time
-import threading
 import logging
+import threading
+import time
+
+import schedule
 
 
 def fake_task() -> None:
-    msg = 'Tarefa executando na thread {}'.format(threading.current_thread())
+    msg = "Tarefa executando na thread {}".format(threading.current_thread())
     logging.debug(msg)
     print(msg)
 
