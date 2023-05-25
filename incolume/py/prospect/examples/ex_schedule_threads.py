@@ -31,9 +31,10 @@ schedule.every(5).seconds.do(run_thread, fake_task)
 schedule.every(5).seconds.do(run_thread, fake_task)
 
 
-stop = 50
+def run():
+    stop = 50
 
-while stop > 0:
-    schedule.run_pending()
-    time.sleep(1)
-    stop -= 1
+    while stop > 0:
+        schedule.run_pending()
+        time.sleep(1)
+        stop -= 1

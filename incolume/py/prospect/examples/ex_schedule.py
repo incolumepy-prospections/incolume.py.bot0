@@ -20,6 +20,10 @@ schedule.every().monday.do(fake_task)
 schedule.every().thursday.do(fake_task)
 schedule.every().day.at("09:00").do(fake_task)
 
-while 1:
-    schedule.run_pending()
-    time.sleep(1)
+
+def run():
+    stop = 50
+    while stop >= 0:
+        schedule.run_pending()
+        time.sleep(1)
+        stop -= 1
