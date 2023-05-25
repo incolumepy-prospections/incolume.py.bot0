@@ -11,6 +11,7 @@ packages = [{include = "incolume"}]
 python = "^3.10"
 schedule = "^1.2.0"
 pyautogui = "^0.9.54"
+selenium = "^4.9.1"
 
 [tool.poetry.scripts]
 bot-revervapr = 'incolume.py.prospect.bot.bot_revervapr:run'
