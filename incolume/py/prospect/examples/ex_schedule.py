@@ -2,12 +2,13 @@
 
 __author__ = "@britodfbr"  # pragma: no cover
 
-import schedule
 import time
 
+import schedule
 
-def fake_task(msg: str = '') -> None:
-    msg = msg or 'Tarefa importante!'
+
+def fake_task(msg: str = "") -> None:
+    msg = msg or "Tarefa importante!"
     print(msg)
 
 
